@@ -76,14 +76,32 @@
       </div>
       </div>
     </div>
+      
+   <script src=
+        "https://www.google.com/recaptcha/api.js" async defer>
+    </script>
+</head>
+  
+<body>
+    <div class="container">
+  
+        <form action="action.php" method="post"> 
     <div class="form-group">        
       <div class="col-md-offset-9  col-md-12">
       <!--<button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">Create New</button>-->
         <button type="hidden"  class="btn btn-warning"><a href="index_test.php">Login</button>
-        <p>Dont have an account? Create one <a href="register.php">here</a></p>
        
       </div>
     </div>
+    <div class="g-recaptcha" 
+                data-sitekey="6LeeqOogAAAAAGjhRwRL7-nGGQ6awlo2Dnc4Qyfo">
+            </div>
+            <br>
+  
+            <button type="submit" name="submit_btn">
+                Submit
+            </button>
+  </form>
   </form>
    </div>          
 </div>
@@ -96,3 +114,17 @@
     <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
   
 </html>
+
+<?php
+    
+// Checking valid form is submit or not
+if (isset($_POST['submit_btn'])) {
+    
+    // Storing name in $name variable
+    $user = $_POST['user'];
+    
+    // Storing google recaptcha response
+    // in $recaptcha variable
+    $recaptcha = $_POST['g-recaptcha-response'];
+}
+?>

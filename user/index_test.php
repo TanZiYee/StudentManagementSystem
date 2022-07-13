@@ -98,7 +98,7 @@ section img {
       <a href="subjects.php">Subjects</a>
       <a href="program.php">Curriculum</a>
       <a href="records.php">Records</a>
-      <a href="quickstart.php">Calendar</a>
+      <a href="google_maps.php">Google Maps</a>
       <li><a href="logout.php">Logout</a>
     </div>
   </li>
