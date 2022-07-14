@@ -23,7 +23,7 @@
     <script src="assets/js/jquery.js"></script>
     <style>
       body{
-        display: flex;
+        display: inline-flex;
         height: calc(100%);
         width: calc(100%);
         justify-content: center;
@@ -31,7 +31,7 @@
       }
       .login-form {
   display: block;
-  position: fixed;
+  position: absolute;
   border:5px solid grey;
   border-radius: 20px;
   padding: 30px;
