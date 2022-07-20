@@ -1,21 +1,15 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.2
+-- version 5.1.3
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: Feb 26, 2021 at 11:00 PM
--- Server version: 10.4.14-MariaDB
--- PHP Version: 7.4.10
+-- Host: localhost:3307:3307
+-- Generation Time: Jul 20, 2022 at 02:07 PM
+-- Server version: 10.4.24-MariaDB
+-- PHP Version: 8.1.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "+00:00";
-
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
 
 --
 -- Database: `grading_db`
@@ -124,7 +118,12 @@ INSERT INTO `grade` (`grade_id`, `grade`, `status`) VALUES
 (1, '7', ''),
 (2, '8', ''),
 (3, '9', ''),
-(4, '10', '');
+(4, '10', ''),
+(23, '11', ''),
+(24, '12', ''),
+(25, '13', ''),
+(26, '14', ''),
+(27, '15', '');
 
 -- --------------------------------------------------------
 
@@ -166,7 +165,88 @@ INSERT INTO `history_log` (`log_id`, `transaction`, `user_id`, `date_added`) VAL
 (40, 'printed Angel Jude Suarez permanent record', 1, '2021-02-26 11:58:23'),
 (41, 'added record of m m', 0, '2021-02-26 12:00:26'),
 (42, 'printed Angel Jude Suarez permanent record', 1, '2021-02-26 12:00:46'),
-(43, 'logged out', 1, '2021-02-26 12:05:14');
+(43, 'logged out', 1, '2021-02-26 12:05:14'),
+(44, 'added Additional Math in the subject list', 0, '2022-06-16 18:05:29'),
+(45, 'added Additional Math in the subject list', 0, '2022-06-16 18:05:34'),
+(46, 'added 12 in the grades list', 0, '2022-06-16 18:11:36'),
+(47, 'added 11 in the grades list', 0, '2022-06-16 18:11:53'),
+(48, 'added qwerty yui as new student', 0, '2022-06-24 15:18:10'),
+(49, 'added lui jason as new student', 0, '2022-06-24 15:29:29'),
+(50, 'updated 3 in the curriculum list', 0, '2022-07-01 16:38:48'),
+(51, 'updated 3 in the curriculum list', 0, '2022-07-01 16:38:50'),
+(52, 'updated 1 in the curriculum list', 0, '2022-07-01 16:38:52'),
+(53, 'updated 2 in the curriculum list', 0, '2022-07-01 16:38:52'),
+(54, 'updated 1 in the curriculum list', 0, '2022-07-01 16:38:53'),
+(55, 'updated 3 in the curriculum list', 0, '2022-07-01 16:38:53'),
+(56, 'added Jeff satur as new student', 0, '2022-07-04 01:08:02'),
+(57, 'added Sivan trite as new student', 0, '2022-07-04 01:10:53'),
+(58, 'added Arce Michelle as new student', 0, '2022-07-04 01:15:03'),
+(59, 'added Chee  Tan as new student', 0, '2022-07-04 10:05:59'),
+(60, 'added Fei Kim as new student', 0, '2022-07-11 14:41:08'),
+(61, 'added Xin Tan  as new student', 0, '2022-07-11 14:43:12'),
+(62, 'printed   permanent record', 0, '2022-07-12 23:34:12'),
+(63, 'logged out', 0, '2022-07-12 23:42:37'),
+(64, 'printed   permanent record', 0, '2022-07-12 23:50:36'),
+(65, 'added Leng Loh as new student', 0, '2022-07-13 01:55:13'),
+(66, 'added   as new student', 0, '2022-07-13 02:08:20'),
+(67, 'added 6 in the grades list', 0, '2022-07-13 02:36:09'),
+(68, 'added Computer in the subject list', 0, '2022-07-13 02:37:45'),
+(69, 'added 5 in the grades list', 0, '2022-07-13 02:39:29'),
+(70, 'added 4 in the grades list', 0, '2022-07-13 02:39:40'),
+(71, 'added 11 in the grades list', 0, '2022-07-13 02:42:30'),
+(72, 'added 12 in the grades list', 0, '2022-07-13 02:43:23'),
+(73, 'added 12 in the grades list', 0, '2022-07-13 02:45:30'),
+(74, 'added 13 in the grades list', 0, '2022-07-13 02:47:41'),
+(75, 'added 12 in the grades list', 0, '2022-07-13 02:50:42'),
+(76, 'added 13 in the grades list', 0, '2022-07-13 02:51:13'),
+(77, 'added 13 in the grades list', 0, '2022-07-13 02:54:00'),
+(78, 'added 14 in the grades list', 0, '2022-07-13 02:57:36'),
+(79, 'added 15 in the grades list', 0, '2022-07-13 02:57:45'),
+(80, 'added 16 in the grades list', 0, '2022-07-13 02:59:26'),
+(81, 'added Chinese in the subject list', 0, '2022-07-13 03:00:04'),
+(82, 'added Chinese in the subject list', 0, '2022-07-13 03:00:37'),
+(83, 'added Chinese in the subject list', 0, '2022-07-13 03:00:55'),
+(84, 'added Zi Tan as new student', 0, '2022-07-13 03:03:52'),
+(85, 'logged out', 0, '2022-07-13 03:04:00'),
+(86, 'logged out', 0, '2022-07-13 03:06:23'),
+(87, 'updated   academic record', 0, '2022-07-13 05:16:18'),
+(88, 'added Mei Yong as new student', 0, '2022-07-13 05:25:51'),
+(89, 'added 17 in the grades list', 0, '2022-07-13 05:26:01'),
+(90, 'added Physics in the subject list', 0, '2022-07-13 05:26:39'),
+(91, 'logged out', 0, '2022-07-13 05:27:16'),
+(92, 'added Sew Si as new student', 0, '2022-07-13 05:34:45'),
+(93, 'added 18 in the grades list', 0, '2022-07-13 05:34:56'),
+(94, 'added Biology in the subject list', 0, '2022-07-13 05:35:11'),
+(95, 'printed Angel Jude Suarez permanent record', 0, '2022-07-13 05:53:05'),
+(96, 'printed Zi Tan permanent record', 0, '2022-07-13 05:53:16'),
+(97, 'printed Angel Jude Suarez permanent record', 0, '2022-07-13 05:54:04'),
+(98, 'added Zi  Tan as new student', 0, '2022-07-13 06:12:03'),
+(99, 'added 19 in the grades list', 0, '2022-07-13 06:12:20'),
+(100, 'added Chemistry in the subject list', 0, '2022-07-13 06:12:44'),
+(101, 'added Yong Lau as new student', 0, '2022-07-14 02:34:37'),
+(102, 'added Kar Pong as new student', 0, '2022-07-14 02:43:36'),
+(103, 'added 11 in the grades list', 0, '2022-07-14 02:43:45'),
+(104, 'added Programming in the subject list', 0, '2022-07-14 02:44:21'),
+(105, 'added ke tan as new student', 0, '2022-07-14 05:22:30'),
+(106, 'added ke tan as new student', 0, '2022-07-14 05:23:00'),
+(107, 'added Ke Tan as new student', 0, '2022-07-14 05:24:42'),
+(108, 'added Yen Tan  as new student', 0, '2022-07-14 05:30:35'),
+(109, 'added 12 in the grades list', 0, '2022-07-14 05:31:41'),
+(110, 'added Bahasa Malaysia in the subject list', 0, '2022-07-14 05:33:05'),
+(111, 'added Zi Tan as new student', 0, '2022-07-14 06:06:34'),
+(112, 'added 13 in the grades list', 0, '2022-07-14 06:07:01'),
+(113, 'added Mathematics in the subject list', 0, '2022-07-14 06:07:38'),
+(114, 'added Xin tan as new student', 0, '2022-07-14 21:59:44'),
+(115, 'added 14 in the grades list', 0, '2022-07-14 22:00:09'),
+(116, 'added IT in the subject list', 0, '2022-07-14 22:00:35'),
+(117, 'added Yee Tan as new student', 0, '2022-07-14 22:14:29'),
+(118, 'added 15 in the grades list', 0, '2022-07-14 22:14:48'),
+(119, 'added Art in the subject list', 0, '2022-07-14 22:15:09'),
+(120, 'added kan Low as new student', 0, '2022-07-17 16:08:03'),
+(121, 'logged out', 0, '2022-07-17 16:50:50'),
+(122, 'logged out', 0, '2022-07-17 16:51:01'),
+(123, 'logged out', 0, '2022-07-17 16:54:32'),
+(124, 'logged out', 0, '2022-07-17 16:54:44');
 
 -- --------------------------------------------------------
 
@@ -185,7 +265,19 @@ CREATE TABLE `program` (
 --
 
 INSERT INTO `program` (`PROGRAM_ID`, `PROGRAM`, `DESCRIPTION`) VALUES
-(1, 'Regular', 'Regular');
+(1, 'Regular', 'Regular'),
+(2, 'Tennisball', 'Ball activity'),
+(3, 'Badminton', 'Ball activity'),
+(4, 'Art Club', 'Drawing, Handmake'),
+(5, 'Chinese La', 'Chinese Language'),
+(6, 'BasketBall', 'Ball activity'),
+(8, 'Volleyball', 'ball activity'),
+(10, 'Student Cl', 'Valid for all students that want to lead'),
+(11, 'Football', 'Ball activity'),
+(12, 'Ball Game', 'Ball Game Activity'),
+(13, 'Game', 'Game Activity'),
+(14, 'Handmake', 'Handmake society'),
+(15, 'Bahasa Lan', 'Bahasa Language');
 
 -- --------------------------------------------------------
 
@@ -280,7 +372,18 @@ CREATE TABLE `student_info` (
 --
 
 INSERT INTO `student_info` (`STUDENT_ID`, `LRN_NO`, `LASTNAME`, `FIRSTNAME`, `MIDDLENAME`, `GENDER`, `DATE_OF_BIRTH`, `ADDRESS`, `BIRTH_PLACE`, `PARENT_GUARDIAN`, `P_ADDRESS`, `INT_COURSE_COMP`, `SCHOOL_YEAR`, `GEN_AVE`, `TOTAL_NO_OF_YEARS`, `PROGRAM`) VALUES
-(2, '11111', 'Suarez', 'Angel Jude', 'Reyes', 'MALE', '1996-02-11', 'Himamaylan City', 'Brgy. Tooy Himamaylan City', 'Michael Suarez', 'Himamaylan City', 'San Ramon Catholic School', '2004-2010', '85', '6', '1');
+(2, '11111', 'Suarez', 'Angel Jude', 'Reyes', 'MALE', '1996-02-11', 'Himamaylan City', 'Brgy. Tooy Himamaylan City', 'Michael Suarez', 'Himamaylan City', 'San Ramon Catholic School', '2004-2010', '85', '6', '1'),
+(7, '23', 'Michelle', 'Arce', 'Sas', 'FEMALE', '2003-02-05', '12, Lorong bas, p.P', 'Kedah', 'Laura Arce', '12, Lorong Bas, P.P', 'CC', '2021-2022', '54', '1', '3'),
+(8, '58', 'Tan', 'Chee ', 'Keong', 'MALE', '2003-10-15', '7, Lorong Tan, P.P', 'Penang', 'Tan Heng Huat', '7, Lorong Tan, P.P', 'CC', '2021-2022', '85', '1', '2'),
+(10, '88', 'Tan ', 'Xin', 'Yee', 'MALE', '2000-08-19', '5, Lorong Yui, Taman', 'Penang', 'Tan Chee keong', '5, Lorong Yui, Taman Ou, P.P', 'CC', '2021-2022', '80', '1', '3'),
+(11, '21', 'Loh', 'Leng', 'Leng', 'FEMALE', '2000-10-19', '8, Taman Mountain, P', 'Penang', 'Loh Kwan Hin', '8, Taman Mountain, P.P', 'CC', '2021-2022', '58', '1', '4'),
+(14, '10', 'Yong', 'Mei', 'Qi', 'FEMALE', '2000-06-21', '8, Taman Mountain, P', 'Penang', 'Yong Wei Quan', '8, Taman Mountain, P.P', 'HCHS', '2021-2022', '85', '1', '4'),
+(16, '9', 'Tan', 'Zi ', 'Yee', 'FEMALE', '2013-02-21', '40,Tingkat Relau 6,S', 'Bayan Lepas', 'Tan Chee keong', '40,Tingkat Relau 6,Setia Vista, Relau', 'CC', '2021-2022', '85', '1', '4'),
+(17, '1112', 'Lau', 'Yong', 'Hui', 'FEMALE', '2002-10-23', '50-D, Cangkat Minden', 'Penang', 'Lau Teik Hin', '50-D, Cangkat Minden Jalan 15, Minden Heights, 11700 Gelugor', 'HCHS', '2021-2022', '89', '1', '4'),
+(18, '3235', 'Pong', 'Kar', 'Sin', 'FEMALE', '2002-01-04', '20, Lebuh Rambai 3, ', 'Penang', 'pong Jie Shen', '20, Lebuh Rambai 3, Paya Terubong, 11500 Ayer Itam, Pulau Pi', 'HCHS', '2020-2022', '85', '2', '6'),
+(21, '56', 'Tan', 'Ke', 'Qi', 'FEMALE', '1999-03-25', '6, Lorong Ara, Taman', 'Penang', 'Tan Keng Hui', '6, Lorong Ara, Taman Bunga, P.P', 'CC', '2021-2022', '54', '1', '3'),
+(22, '11112', 'Tan ', 'Yen', 'Yin', 'FEMALE', '2002-02-25', '7, Jalan Ara, Lorong', 'Penang', 'Tan Keng Hui', '7, Jalan Ara, Lorong Hua,Taman Harum, P.P', 'HCHS', '2021-2022', '56', '1', '6'),
+(23, '2', 'Tan', 'Zi', 'Xuan', 'FEMALE', '2002-11-25', '40,Tingkat Relau 6,S', 'penang', 'Tan Chee keong', '40,Tingkat Relau 6,Setia Vista, Relau', 'HCHS', '2021-2022', '89', '1', '4');
 
 -- --------------------------------------------------------
 
@@ -350,7 +453,17 @@ CREATE TABLE `subjects` (
 INSERT INTO `subjects` (`SUBJECT_ID`, `SUBJECT`, `FOR`, `DESCRIPTION`) VALUES
 (1, 'English', 'All', 'English'),
 (2, 'Math', 'All', 'Math'),
-(3, 'Science', 'All', 'dsaf');
+(4, 'Additional Math', 'All', 'Advanced'),
+(6, 'Computer', 'All', 'IT'),
+(7, 'Chinese', 'All', 'Chinese'),
+(10, 'Physics', 'All', 'Physics'),
+(11, 'Biology', 'All', 'Biology'),
+(12, 'Chemistry', 'All', 'Chemistry'),
+(13, 'Programming', 'All', 'Programming Language(Python)'),
+(14, 'Bahasa Malaysia', 'All', 'Bahasa Language'),
+(15, 'Mathematics', 'All', 'Mathematics'),
+(16, 'IT', 'All', 'IT'),
+(17, 'Art', 'All', 'Art');
 
 -- --------------------------------------------------------
 
@@ -542,7 +655,7 @@ ALTER TABLE `data_base`
 -- AUTO_INCREMENT for table `grade`
 --
 ALTER TABLE `grade`
-  MODIFY `grade_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `grade_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 
 --
 -- AUTO_INCREMENT for table `grades_per_subject`
@@ -554,13 +667,13 @@ ALTER TABLE `grades_per_subject`
 -- AUTO_INCREMENT for table `history_log`
 --
 ALTER TABLE `history_log`
-  MODIFY `log_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
+  MODIFY `log_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=125;
 
 --
 -- AUTO_INCREMENT for table `program`
 --
 ALTER TABLE `program`
-  MODIFY `PROGRAM_ID` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `PROGRAM_ID` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT for table `promotion_candidates`
@@ -584,7 +697,7 @@ ALTER TABLE `students`
 -- AUTO_INCREMENT for table `student_info`
 --
 ALTER TABLE `student_info`
-  MODIFY `STUDENT_ID` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `STUDENT_ID` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 
 --
 -- AUTO_INCREMENT for table `student_int_info`
@@ -602,7 +715,7 @@ ALTER TABLE `student_year_info`
 -- AUTO_INCREMENT for table `subjects`
 --
 ALTER TABLE `subjects`
-  MODIFY `SUBJECT_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `SUBJECT_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT for table `total_grades_subjects`
@@ -614,10 +727,5 @@ ALTER TABLE `total_grades_subjects`
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `USER_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `USER_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
-
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
-information_schema
